@@ -26,6 +26,35 @@ export default{
 </script>
 
 <style lang="scss">
+.lv-primary-btn{
+  background: var(--primary);
+  &:hover{
+    background: var(--primary-light);
+  }
+  &:active{
+    background: var(--primary-dark);
+  }
+}
+
+.lv-secondary-btn{
+  background: var(--secondary);
+  &:hover{
+    background: var(--secondary-light);
+  }
+  &:active{
+    background: var(--secondary-dark);
+  } 
+}
+
+.lv-info-btn{
+  background: var(--info);
+  &:hover{
+    background: var(--info-light);
+  }
+  &:active{
+    background: var(--info-dark);
+  } 
+}
 
 .lv-button {
     box-shadow: none !important;
