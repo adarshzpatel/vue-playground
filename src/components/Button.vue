@@ -1,5 +1,5 @@
 <template>
-  <button class="lv-button" v-bind="$attrs" :class="color"  >
+  <button class="lv-button" v-bind="$attrs" :class="themeClass"  >
     <slot></slot>  
   </button>  
 </template>
@@ -11,6 +11,15 @@ export default{
     color:{
       type: String,
       default: 'primary'
+    }
+  },
+  computed: {
+    themeClass(){
+      return {
+        'lv-primary-btn': this.color == 'primary',
+        'lv-secondary-btn': this.color == 'secondary',
+        'lv-info-btn' : this.color == 'info',
+      }
     }
   }
 }

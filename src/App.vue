@@ -62,7 +62,7 @@ export default {
   --info-dark: #007bb2;
 }
 
-.primary{
+.lv-primary-btn{
   background: var(--primary);
   &:hover{
     background: var(--primary-light);
@@ -72,7 +72,7 @@ export default {
   }
 }
 
-.secondary{
+.lv-secondary-btn{
   background: var(--secondary);
   &:hover{
     background: var(--secondary-light);
@@ -82,7 +82,7 @@ export default {
   } 
 }
 
-.info{
+.lv-info-btn{
   background: var(--info);
   &:hover{
     background: var(--info-light);
